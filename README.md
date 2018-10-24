@@ -47,10 +47,11 @@ To set up and initialize Contentstack’s iOS SDK, refer to our documentation [
 
 To get your app up and running quickly, we have created a sample app. Clone the Github repo given below and change the configuration as per your need:
 
-$ git clone https://github.com/contentstack/contentstack-ios-sync-playground.git
+```
+$ git clone  https://github.com/contentstack/contentstack-ios-persistence-example.git
+```
 
 Now add your Contentstack API Key, Delivery Token, and Environment to the APIManager.swift file within your project. (Find your [Stack's API Key and Delivery Token](https://www.contentstack.com/docs/apis/content-delivery-api/#authentication).)
-
 
 ```
 class StackConfig {

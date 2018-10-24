@@ -9,13 +9,13 @@
 import UIKit
 
 class StackConfig {
-    static var APIKey           = "blt74a50c2ca360f373"
-    static var AccessToken    = "cs277916ede0367f794aaa48c6"
-    static var EnvironmentName  = "web"
+    static var APIKey           = "API_KEY"
+    static var AccessToken    = "ACCESS_TOKEN"
+    static var EnvironmentName  = "ENVIRONMENT"
     static var _config : Config {
         get {
             let config = Config()
-            config.host = "stag-cdn.contentstack.io"
+            //            config.host = "URL"
             return config
         }
     }
