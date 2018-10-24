@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54CD54AD1E8A13E2E39C736E /* Pods_contentstack_ios_persistence_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */; };
+		FAE2B5E621805DB000D5E7E8 /* Contentstack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */; };
+		FAFADB0F2175ACA70000A175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB0E2175ACA70000A175 /* AppDelegate.swift */; };
+		FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB152175ACA80000A175 /* Assets.xcassets */; };
+		FAFADB192175ACA80000A175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB172175ACA80000A175 /* LaunchScreen.storyboard */; };
+		FAFADB2A2175ADE80000A175 /* SyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB232175ADE80000A175 /* SyncManager.m */; };
+		FAFADB2B2175ADE80000A175 /* RealmStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB242175ADE80000A175 /* RealmStore.m */; };
+		FAFADB2C2175ADE80000A175 /* CoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB272175ADE80000A175 /* CoreDataStore.m */; };
+		FAFADB332175B51C0000A175 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB312175B51C0000A175 /* Session.swift */; };
+		FAFADB352175B5440000A175 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB342175B5440000A175 /* Assets.swift */; };
+		FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB382175B56B0000A175 /* SyncStore.swift */; };
+		FAFADB7B2175B6090000A175 /* SplashScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB3F2175B6090000A175 /* SplashScreenWorker.swift */; };
+		FAFADB7C2175B6090000A175 /* SplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB402175B6090000A175 /* SplashScreenInteractor.swift */; };
+		FAFADB7D2175B6090000A175 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB412175B6090000A175 /* SplashScreenRouter.swift */; };
+		FAFADB7E2175B6090000A175 /* SplashScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB422175B6090000A175 /* SplashScreenModels.swift */; };
+		FAFADB7F2175B6090000A175 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB432175B6090000A175 /* SplashScreenPresenter.swift */; };
+		FAFADB802175B6090000A175 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB442175B6090000A175 /* SplashScreenViewController.swift */; };
+		FAFADB812175B6090000A175 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB462175B6090000A175 /* SplashScreen.storyboard */; };
+		FAFADB932175B6090000A175 /* Session.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB602175B6090000A175 /* Session.storyboard */; };
+		FAFADB9C2175B6090000A175 /* SessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB6C2175B6090000A175 /* SessionCell.xib */; };
+		FAFADBA42175B6090000A175 /* SessionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB752175B6090000A175 /* SessionListInteractor.swift */; };
+		FAFADBA52175B6090000A175 /* SessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB762175B6090000A175 /* SessionListViewController.swift */; };
+		FAFADBA62175B6090000A175 /* SessionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB772175B6090000A175 /* SessionListPresenter.swift */; };
+		FAFADBA72175B6090000A175 /* SessionListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB782175B6090000A175 /* SessionListModels.swift */; };
+		FAFADBA82175B6090000A175 /* SessionListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB792175B6090000A175 /* SessionListRouter.swift */; };
+		FAFADBA92175B6090000A175 /* SessionListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB7A2175B6090000A175 /* SessionListWorker.swift */; };
+		FAFADBAC2175B61E0000A175 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBAB2175B61E0000A175 /* APIManager.swift */; };
+		FAFADBB62175B64A0000A175 /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBAE2175B64A0000A175 /* UIFont+Additions.swift */; };
+		FAFADBB82175B64A0000A175 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB02175B64A0000A175 /* Data+Additions.swift */; };
+		FAFADBB92175B64A0000A175 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB12175B64A0000A175 /* UIViewController+Extension.swift */; };
+		FAFADBBA2175B64A0000A175 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB22175B64A0000A175 /* Result.swift */; };
+		FAFADBBB2175B64A0000A175 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB32175B64A0000A175 /* UIColor+Additions.swift */; };
+		FAFADBBC2175B64A0000A175 /* String+Addtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB42175B64A0000A175 /* String+Addtions.swift */; };
+		FAFADBBD2175B64A0000A175 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB52175B64A0000A175 /* UIView+Additions.swift */; };
+		FAFADBC02175B6C50000A175 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBBF2175B6C50000A175 /* UIImageView+Additions.swift */; };
+		FAFADBC32175B8B00000A175 /* ImageLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */; };
+		FAFADBC52175BA3C0000A175 /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC42175BA3C0000A175 /* SessionCell.swift */; };
+		FAFADBC82175BAC70000A175 /* ImageDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC72175BAC60000A175 /* ImageDownloadOperation.swift */; };
+		FAFADBD72175BC4B0000A175 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCB2175BC4A0000A175 /* SF-Pro-Display-Thin.otf */; };
+		FAFADBD82175BC4B0000A175 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCC2175BC4A0000A175 /* SF-Pro-Display-RegularItalic.otf */; };
+		FAFADBD92175BC4B0000A175 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCD2175BC4A0000A175 /* SF-Pro-Display-Light.otf */; };
+		FAFADBDA2175BC4B0000A175 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCE2175BC4A0000A175 /* SF-Pro-Display-Regular.otf */; };
+		FAFADBDB2175BC4B0000A175 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCF2175BC4A0000A175 /* SF-Pro-Display-Bold.otf */; };
+		FAFADBDC2175BC4B0000A175 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD02175BC4A0000A175 /* SF-Pro-Display-Medium.otf */; };
+		FAFADBDD2175BC4B0000A175 /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD12175BC4A0000A175 /* SF-Pro-Display-MediumItalic.otf */; };
+		FAFADBDE2175BC4B0000A175 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD22175BC4A0000A175 /* SF-Pro-Display-Ultralight.otf */; };
+		FAFADBDF2175BC4B0000A175 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD32175BC4A0000A175 /* SF-Pro-Display-UltralightItalic.otf */; };
+		FAFADBE02175BC4B0000A175 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD42175BC4A0000A175 /* SF-Pro-Display-LightItalic.otf */; };
+		FAFADBE12175BC4B0000A175 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD52175BC4A0000A175 /* SF-Pro-Display-ThinItalic.otf */; };
+		FAFADBE22175BC4B0000A175 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBD62175BC4A0000A175 /* SF-Pro-Display-BoldItalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		130ACBA577EF9D8922AB7B6C /* Pods-ContentstackPersitenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.release.xcconfig"; sourceTree = "<group>"; };
+		24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.debug.xcconfig"; sourceTree = "<group>"; };
+		5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.release.xcconfig"; sourceTree = "<group>"; };
+		6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentstack_ios_persistence_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Contentstack.framework; sourceTree = "<group>"; };
+		FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contentstack-ios-persistence-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFADB0E2175ACA70000A175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFADB152175ACA80000A175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFADB182175ACA80000A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFADB1A2175ACA80000A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFADB212175ADE70000A175 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		FAFADB222175ADE80000A175 /* RealmStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmStore.h; sourceTree = "<group>"; };
+		FAFADB232175ADE80000A175 /* SyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncManager.m; sourceTree = "<group>"; };
+		FAFADB242175ADE80000A175 /* RealmStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmStore.m; sourceTree = "<group>"; };
+		FAFADB252175ADE80000A175 /* SyncPersistable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncPersistable.h; sourceTree = "<group>"; };
+		FAFADB262175ADE80000A175 /* SyncProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncProtocol.h; sourceTree = "<group>"; };
+		FAFADB272175ADE80000A175 /* CoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStore.m; sourceTree = "<group>"; };
+		FAFADB282175ADE80000A175 /* SyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncManager.h; sourceTree = "<group>"; };
+		FAFADB292175ADE80000A175 /* CoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStore.h; sourceTree = "<group>"; };
+		FAFADB312175B51C0000A175 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FAFADB342175B5440000A175 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FAFADB382175B56B0000A175 /* SyncStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncStore.swift; sourceTree = "<group>"; };
+		FAFADB3F2175B6090000A175 /* SplashScreenWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenWorker.swift; sourceTree = "<group>"; };
+		FAFADB402175B6090000A175 /* SplashScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractor.swift; sourceTree = "<group>"; };
+		FAFADB412175B6090000A175 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		FAFADB422175B6090000A175 /* SplashScreenModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModels.swift; sourceTree = "<group>"; };
+		FAFADB432175B6090000A175 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		FAFADB442175B6090000A175 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		FAFADB462175B6090000A175 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		FAFADB602175B6090000A175 /* Session.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Session.storyboard; sourceTree = "<group>"; };
+		FAFADB6C2175B6090000A175 /* SessionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionCell.xib; sourceTree = "<group>"; };
+		FAFADB752175B6090000A175 /* SessionListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListInteractor.swift; sourceTree = "<group>"; };
+		FAFADB762175B6090000A175 /* SessionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListViewController.swift; sourceTree = "<group>"; };
+		FAFADB772175B6090000A175 /* SessionListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListPresenter.swift; sourceTree = "<group>"; };
+		FAFADB782175B6090000A175 /* SessionListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListModels.swift; sourceTree = "<group>"; };
+		FAFADB792175B6090000A175 /* SessionListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListRouter.swift; sourceTree = "<group>"; };
+		FAFADB7A2175B6090000A175 /* SessionListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListWorker.swift; sourceTree = "<group>"; };
+		FAFADBAB2175B61E0000A175 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FAFADBAE2175B64A0000A175 /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		FAFADBB02175B64A0000A175 /* Data+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
+		FAFADBB12175B64A0000A175 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FAFADBB22175B64A0000A175 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FAFADBB32175B64A0000A175 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		FAFADBB42175B64A0000A175 /* String+Addtions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Addtions.swift"; sourceTree = "<group>"; };
+		FAFADBB52175B64A0000A175 /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		FAFADBBF2175B6C50000A175 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
+		FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadManager.swift; sourceTree = "<group>"; };
+		FAFADBC42175BA3C0000A175 /* SessionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
+		FAFADBC72175BAC60000A175 /* ImageDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadOperation.swift; sourceTree = "<group>"; };
+		FAFADBCB2175BC4A0000A175 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		FAFADBCC2175BC4A0000A175 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		FAFADBCD2175BC4A0000A175 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		FAFADBCE2175BC4A0000A175 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		FAFADBCF2175BC4A0000A175 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		FAFADBD02175BC4A0000A175 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		FAFADBD12175BC4A0000A175 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		FAFADBD22175BC4A0000A175 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		FAFADBD32175BC4A0000A175 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		FAFADBD42175BC4A0000A175 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		FAFADBD52175BC4A0000A175 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		FAFADBD62175BC4A0000A175 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFADB082175ACA70000A175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE2B5E621805DB000D5E7E8 /* Contentstack.framework in Frameworks */,
+				54CD54AD1E8A13E2E39C736E /* Pods_contentstack_ios_persistence_example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14838B5FF5690595873937A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */,
+				130ACBA577EF9D8922AB7B6C /* Pods-ContentstackPersitenceiOS.release.xcconfig */,
+				24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */,
+				5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6B72EC7667624880FA8DC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */,
+				E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAFADB022175ACA70000A175 = {
+			isa = PBXGroup;
+			children = (
+				FAFADB0D2175ACA70000A175 /* contentstack-ios-persistence-example */,
+				FAFADB0C2175ACA70000A175 /* Products */,
+				14838B5FF5690595873937A4 /* Pods */,
+				C6B72EC7667624880FA8DC62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFADB0C2175ACA70000A175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFADB0D2175ACA70000A175 /* contentstack-ios-persistence-example */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBC92175BC4A0000A175 /* Fonts */,
+				FAFADBC62175BAC60000A175 /* Operations */,
+				FAFADBC12175B8A90000A175 /* Utils */,
+				FAFADBBE2175B6C50000A175 /* Protocols */,
+				FAFADBAD2175B63A0000A175 /* Extension */,
+				FAFADB3C2175B5EC0000A175 /* Sence */,
+				FAFADB2F2175B50F0000A175 /* RealmModel */,
+				FAFADB202175AD9B0000A175 /* SyncWrapper */,
+				FAFADBAA2175B61E0000A175 /* APIManager */,
+				FAFADB0E2175ACA70000A175 /* AppDelegate.swift */,
+				FAFADB152175ACA80000A175 /* Assets.xcassets */,
+				FAFADB172175ACA80000A175 /* LaunchScreen.storyboard */,
+				FAFADB1A2175ACA80000A175 /* Info.plist */,
+			);
+			path = "contentstack-ios-persistence-example";
+			sourceTree = "<group>";
+		};
+		FAFADB202175AD9B0000A175 /* SyncWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB292175ADE80000A175 /* CoreDataStore.h */,
+				FAFADB272175ADE80000A175 /* CoreDataStore.m */,
+				FAFADB222175ADE80000A175 /* RealmStore.h */,
+				FAFADB242175ADE80000A175 /* RealmStore.m */,
+				FAFADB282175ADE80000A175 /* SyncManager.h */,
+				FAFADB232175ADE80000A175 /* SyncManager.m */,
+				FAFADB252175ADE80000A175 /* SyncPersistable.h */,
+				FAFADB262175ADE80000A175 /* SyncProtocol.h */,
+				FAFADB212175ADE70000A175 /* BridgeHeader.h */,
+			);
+			path = SyncWrapper;
+			sourceTree = "<group>";
+		};
+		FAFADB2F2175B50F0000A175 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB342175B5440000A175 /* Assets.swift */,
+				FAFADB312175B51C0000A175 /* Session.swift */,
+				FAFADB382175B56B0000A175 /* SyncStore.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		FAFADB3C2175B5EC0000A175 /* Sence */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB5E2175B6090000A175 /* Sessions */,
+				FAFADB3D2175B6090000A175 /* SplashScreen */,
+			);
+			path = Sence;
+			sourceTree = "<group>";
+		};
+		FAFADB3D2175B6090000A175 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB3E2175B6090000A175 /* SplashScreenViewController */,
+				FAFADB452175B6090000A175 /* SplashStoryBoard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		FAFADB3E2175B6090000A175 /* SplashScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB3F2175B6090000A175 /* SplashScreenWorker.swift */,
+				FAFADB402175B6090000A175 /* SplashScreenInteractor.swift */,
+				FAFADB412175B6090000A175 /* SplashScreenRouter.swift */,
+				FAFADB422175B6090000A175 /* SplashScreenModels.swift */,
+				FAFADB432175B6090000A175 /* SplashScreenPresenter.swift */,
+				FAFADB442175B6090000A175 /* SplashScreenViewController.swift */,
+			);
+			path = SplashScreenViewController;
+			sourceTree = "<group>";
+		};
+		FAFADB452175B6090000A175 /* SplashStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB462175B6090000A175 /* SplashScreen.storyboard */,
+			);
+			path = SplashStoryBoard;
+			sourceTree = "<group>";
+		};
+		FAFADB5E2175B6090000A175 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB5F2175B6090000A175 /* SessionStoryBoard */,
+				FAFADB682175B6090000A175 /* Views */,
+				FAFADB742175B6090000A175 /* SessionListViewController */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		FAFADB5F2175B6090000A175 /* SessionStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB602175B6090000A175 /* Session.storyboard */,
+			);
+			path = SessionStoryBoard;
+			sourceTree = "<group>";
+		};
+		FAFADB682175B6090000A175 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB692175B6090000A175 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAFADB692175B6090000A175 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBC42175BA3C0000A175 /* SessionCell.swift */,
+				FAFADB6C2175B6090000A175 /* SessionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAFADB742175B6090000A175 /* SessionListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADB752175B6090000A175 /* SessionListInteractor.swift */,
+				FAFADB762175B6090000A175 /* SessionListViewController.swift */,
+				FAFADB772175B6090000A175 /* SessionListPresenter.swift */,
+				FAFADB782175B6090000A175 /* SessionListModels.swift */,
+				FAFADB792175B6090000A175 /* SessionListRouter.swift */,
+				FAFADB7A2175B6090000A175 /* SessionListWorker.swift */,
+			);
+			path = SessionListViewController;
+			sourceTree = "<group>";
+		};
+		FAFADBAA2175B61E0000A175 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBAB2175B61E0000A175 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		FAFADBAD2175B63A0000A175 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBB02175B64A0000A175 /* Data+Additions.swift */,
+				FAFADBB22175B64A0000A175 /* Result.swift */,
+				FAFADBB42175B64A0000A175 /* String+Addtions.swift */,
+				FAFADBB32175B64A0000A175 /* UIColor+Additions.swift */,
+				FAFADBAE2175B64A0000A175 /* UIFont+Additions.swift */,
+				FAFADBB52175B64A0000A175 /* UIView+Additions.swift */,
+				FAFADBB12175B64A0000A175 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAFADBBE2175B6C50000A175 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBBF2175B6C50000A175 /* UIImageView+Additions.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAFADBC12175B8A90000A175 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAFADBC62175BAC60000A175 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBC72175BAC60000A175 /* ImageDownloadOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		FAFADBC92175BC4A0000A175 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBCA2175BC4A0000A175 /* SFProDisplay */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FAFADBCA2175BC4A0000A175 /* SFProDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				FAFADBCB2175BC4A0000A175 /* SF-Pro-Display-Thin.otf */,
+				FAFADBCC2175BC4A0000A175 /* SF-Pro-Display-RegularItalic.otf */,
+				FAFADBCD2175BC4A0000A175 /* SF-Pro-Display-Light.otf */,
+				FAFADBCE2175BC4A0000A175 /* SF-Pro-Display-Regular.otf */,
+				FAFADBCF2175BC4A0000A175 /* SF-Pro-Display-Bold.otf */,
+				FAFADBD02175BC4A0000A175 /* SF-Pro-Display-Medium.otf */,
+				FAFADBD12175BC4A0000A175 /* SF-Pro-Display-MediumItalic.otf */,
+				FAFADBD22175BC4A0000A175 /* SF-Pro-Display-Ultralight.otf */,
+				FAFADBD32175BC4A0000A175 /* SF-Pro-Display-UltralightItalic.otf */,
+				FAFADBD42175BC4A0000A175 /* SF-Pro-Display-LightItalic.otf */,
+				FAFADBD52175BC4A0000A175 /* SF-Pro-Display-ThinItalic.otf */,
+				FAFADBD62175BC4A0000A175 /* SF-Pro-Display-BoldItalic.otf */,
+			);
+			path = SFProDisplay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFADB0A2175ACA70000A175 /* contentstack-ios-persistence-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFADB1D2175ACA80000A175 /* Build configuration list for PBXNativeTarget "contentstack-ios-persistence-example" */;
+			buildPhases = (
+				4FC2325C61559467366426CD /* [CP] Check Pods Manifest.lock */,
+				FAFADB072175ACA70000A175 /* Sources */,
+				FAFADB082175ACA70000A175 /* Frameworks */,
+				FAFADB092175ACA70000A175 /* Resources */,
+				5D8EA0087B2F1BD410CACBB0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "contentstack-ios-persistence-example";
+			productName = ContentstackPersitenceiOS;
+			productReference = FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFADB032175ACA70000A175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Contentstack;
+				TargetAttributes = {
+					FAFADB0A2175ACA70000A175 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAFADB062175ACA70000A175 /* Build configuration list for PBXProject "contentstack-ios-persistence-example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFADB022175ACA70000A175;
+			productRefGroup = FAFADB0C2175ACA70000A175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFADB0A2175ACA70000A175 /* contentstack-ios-persistence-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFADB092175ACA70000A175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFADB192175ACA80000A175 /* LaunchScreen.storyboard in Resources */,
+				FAFADB812175B6090000A175 /* SplashScreen.storyboard in Resources */,
+				FAFADBE02175BC4B0000A175 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				FAFADBD82175BC4B0000A175 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				FAFADBE22175BC4B0000A175 /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				FAFADBE12175BC4B0000A175 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				FAFADBD72175BC4B0000A175 /* SF-Pro-Display-Thin.otf in Resources */,
+				FAFADBDD2175BC4B0000A175 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */,
+				FAFADB932175B6090000A175 /* Session.storyboard in Resources */,
+				FAFADBDF2175BC4B0000A175 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				FAFADBDC2175BC4B0000A175 /* SF-Pro-Display-Medium.otf in Resources */,
+				FAFADBDB2175BC4B0000A175 /* SF-Pro-Display-Bold.otf in Resources */,
+				FAFADBD92175BC4B0000A175 /* SF-Pro-Display-Light.otf in Resources */,
+				FAFADBDA2175BC4B0000A175 /* SF-Pro-Display-Regular.otf in Resources */,
+				FAFADB9C2175B6090000A175 /* SessionCell.xib in Resources */,
+				FAFADBDE2175BC4B0000A175 /* SF-Pro-Display-Ultralight.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FC2325C61559467366426CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-contentstack-ios-persistence-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8EA0087B2F1BD410CACBB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFADB072175ACA70000A175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFADBBA2175B64A0000A175 /* Result.swift in Sources */,
+				FAFADB332175B51C0000A175 /* Session.swift in Sources */,
+				FAFADB2C2175ADE80000A175 /* CoreDataStore.m in Sources */,
+				FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */,
+				FAFADBC52175BA3C0000A175 /* SessionCell.swift in Sources */,
+				FAFADB352175B5440000A175 /* Assets.swift in Sources */,
+				FAFADB802175B6090000A175 /* SplashScreenViewController.swift in Sources */,
+				FAFADB7D2175B6090000A175 /* SplashScreenRouter.swift in Sources */,
+				FAFADB2B2175ADE80000A175 /* RealmStore.m in Sources */,
+				FAFADBBB2175B64A0000A175 /* UIColor+Additions.swift in Sources */,
+				FAFADB7E2175B6090000A175 /* SplashScreenModels.swift in Sources */,
+				FAFADBB62175B64A0000A175 /* UIFont+Additions.swift in Sources */,
+				FAFADB7F2175B6090000A175 /* SplashScreenPresenter.swift in Sources */,
+				FAFADB7B2175B6090000A175 /* SplashScreenWorker.swift in Sources */,
+				FAFADBA82175B6090000A175 /* SessionListRouter.swift in Sources */,
+				FAFADBB82175B64A0000A175 /* Data+Additions.swift in Sources */,
+				FAFADB0F2175ACA70000A175 /* AppDelegate.swift in Sources */,
+				FAFADBA42175B6090000A175 /* SessionListInteractor.swift in Sources */,
+				FAFADBC02175B6C50000A175 /* UIImageView+Additions.swift in Sources */,
+				FAFADBBC2175B64A0000A175 /* String+Addtions.swift in Sources */,
+				FAFADB7C2175B6090000A175 /* SplashScreenInteractor.swift in Sources */,
+				FAFADBBD2175B64A0000A175 /* UIView+Additions.swift in Sources */,
+				FAFADBA62175B6090000A175 /* SessionListPresenter.swift in Sources */,
+				FAFADBAC2175B61E0000A175 /* APIManager.swift in Sources */,
+				FAFADB2A2175ADE80000A175 /* SyncManager.m in Sources */,
+				FAFADBA72175B6090000A175 /* SessionListModels.swift in Sources */,
+				FAFADBC82175BAC70000A175 /* ImageDownloadOperation.swift in Sources */,
+				FAFADBA92175B6090000A175 /* SessionListWorker.swift in Sources */,
+				FAFADBB92175B64A0000A175 /* UIViewController+Extension.swift in Sources */,
+				FAFADBC32175B8B00000A175 /* ImageLoadManager.swift in Sources */,
+				FAFADBA52175B6090000A175 /* SessionListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAFADB172175ACA80000A175 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFADB182175ACA80000A175 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFADB1B2175ACA80000A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFADB1C2175ACA80000A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFADB1E2175ACA80000A175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/contentstack-ios-persistence-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.contentstack.ContentstackPersitenceiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/SyncWrapper/BridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFADB1F2175ACA80000A175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/contentstack-ios-persistence-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.contentstack.ContentstackPersitenceiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/SyncWrapper/BridgeHeader.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFADB062175ACA70000A175 /* Build configuration list for PBXProject "contentstack-ios-persistence-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFADB1B2175ACA80000A175 /* Debug */,
+				FAFADB1C2175ACA80000A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFADB1D2175ACA80000A175 /* Build configuration list for PBXNativeTarget "contentstack-ios-persistence-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFADB1E2175ACA80000A175 /* Debug */,
+				FAFADB1F2175ACA80000A175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFADB032175ACA70000A175 /* Project object */;
+}
