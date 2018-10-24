@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54CD54AD1E8A13E2E39C736E /* Pods_contentstack_ios_persistence_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */; };
+		FAB46B6E21807CEC008745E4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAB46B6D21807CEC008745E4 /* README.md */; };
 		FAE2B5E621805DB000D5E7E8 /* Contentstack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */; };
 		FAFADB0F2175ACA70000A175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB0E2175ACA70000A175 /* AppDelegate.swift */; };
 		FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB152175ACA80000A175 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.release.xcconfig"; sourceTree = "<group>"; };
 		6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentstack_ios_persistence_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB46B6D21807CEC008745E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Contentstack.framework; sourceTree = "<group>"; };
 		FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contentstack-ios-persistence-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADB0E2175ACA70000A175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		FAFADB022175ACA70000A175 = {
 			isa = PBXGroup;
 			children = (
+				FAB46B6D21807CEC008745E4 /* README.md */,
 				FAFADB0D2175ACA70000A175 /* contentstack-ios-persistence-example */,
 				FAFADB0C2175ACA70000A175 /* Products */,
 				14838B5FF5690595873937A4 /* Pods */,
@@ -449,6 +452,7 @@
 				FAFADBD82175BC4B0000A175 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				FAFADBE22175BC4B0000A175 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				FAFADBE12175BC4B0000A175 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				FAB46B6E21807CEC008745E4 /* README.md in Resources */,
 				FAFADBD72175BC4B0000A175 /* SF-Pro-Display-Thin.otf in Resources */,
 				FAFADBDD2175BC4B0000A175 /* SF-Pro-Display-MediumItalic.otf in Resources */,
 				FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */,
