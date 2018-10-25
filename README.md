@@ -70,53 +70,94 @@ class StackConfig {
 
 This will initiate your project.
 
-## Step 7: Initialize Sync
+## Step 7: Map data
 
-To perform the initial sync, use the sync method, which fetches all the content of the specified environment.
+There are three important items to be mapped in our Synchronization process:
 
+-   Sync token/pagination token
+-   Entries
+-   Assets
+
+Let’s look at how each of the above can be mapped.
+
+### Sync token/pagination token
+To save the sync token and pagination token, you need to create a new file (File > New > File) named SyncStore extending RLMObject,  and add the following code to implement SyncStoreProtocol:
 ```
-APIManager.stack.sync {[weak self] (stack, error) in
-    guard let slf = self, let syncStack = stack else {return}
-    if (error == nill) {
-        syncStack.items.count;
+class SyncStore: RLMObject, SyncStoreProtocol {
+    @objc dynamic var syncToken: String!
+    @objc dynamic var paginationToken: String!
+}
+```
+### Entry
+To begin with, let’s consider an example of a Conference app. Let’s say we have a content type: Session. Let’s see how to implement this example.
+Create a new file (File > New > File) named Session  extending RLMObject,  and add following code to implement EntityProtocol  as shown below:
+```
+class Session: RLMObject, EntryProtocol {
+    @objc dynamic var sessionId = 0
+    @objc dynamic var type: String!
+    @objc dynamic var title: String!
+    @objc dynamic var desc: String!
+    @objc dynamic var url: String!
+    @objc dynamic var uid: String!
+    @objc dynamic var publishLocale: String!
+    @objc dynamic var createdAt: Date!
+    @objc dynamic var updatedAt: Date!
+    @objc dynamic var locale: String!
+    @objc dynamic var isPopular = false
+    @objc dynamic var startTime: Date!
+    @objc dynamic var endTime: Date!
+
+    static func contentTypeid() -> String! {
+        return "session"
+    }
+    static func fieldMapping() -> [AnyHashable : Any]! {
+        return ["sessionId":"session_id",
+        "desc": "description",
+        "type":"type",
+        "isPopular":"is_popular",
+        "startTime":"start_time",
+        "endTime":"end_time"]
     }
 }
 ```
+In the above code, we have to implement contentTypeid  for which you are mapping the Entry content type.
 
-On successful sync completion, you will get a sync token in response, which is used to get subsequent (delta) syncs.
+You also need to implement the fieldMapping  function, which returns the mapping of the attributes and entry fields in Contentstack.
 
-## Step 8: Use pagination token
+Similarly, we can add other entities and perform mapping for each entity.
 
-If the result of the initial sync contains more than 100 records, the response would be paginated. Now, if the sync process is interrupted midway (due to network issues, etc.), a pagination token is returned in the response using which you can reinitiate ‘Intial Sync’.
-
-To complete the sync process, use the following function:
+### Asset
+To save assets, create a new file (File > New > File) named  Assets  extending RLMObject,  and add the following code to implement AssetProtocol.
 
 ```
-APIManger.stack.syncPaginationToken(<pagination_token>, completion: {[weak self] (stack, error) in
-    guard let slf = self, let syncStack = stack else {return}
-    if (error == nill) {
-        syncStack.items.count;
-    }
-})
-```
-# Step 9: Subsequent sync
-
-If the existing content is updated by means of addition, deletion, publishing, or unpublishing of content, you need to re-sync your content. You need to use the sync token (that you receive after initial sync) to get the updated content next time. The sync token fetches only the content that was added, updated, or deleted since your last sync.
-
-For the Delta sync button on the storyboard, add the following action in ViewController:
-```
-@IBAction func deltaSync(_ sender: Any) {}
+class Assets: RLMObject, AssetProtocol{
+    @objc dynamic var publishLocale: String!
+    @objc dynamic var title: String!
+    @objc dynamic var uid: String!
+    @objc dynamic var createdAt: Date!
+    @objc dynamic var updatedAt: Date!
+    @objc dynamic var fileName: String!
+    @objc dynamic var url: String!
+}
 ```
 
-To perform Subsequent sync process, add the following function:
+Now, the final step is to initiate SyncManager and begin with the sync process.
+
+## Step 8: Initiate SyncManager and Sync
+
+After setting up the content mapping, initiate SyncManager by providing the required details:
 ```
-APIManager.stack.syncToken(<sync_token>, completion: { (syncStack:SyncStack, error:NSError) in
-    guard let slf = self, let syncStack = stack else {return}
-    if (error == nill) {
-        syncStack.items.count;
-    }
-})
+static var stack : Stack = Contentstack.stack(withAPIKey: StackConfig.APIKey, accessToken: StackConfig.AccessToken, environmentName: StackConfig.EnvironmentName, config:StackConfig._config)
+
+var realmStore = RealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
+
+var syncManager : SyncManager = SyncManager(stack: stack, persistance: realmStore)
+
+self.syncManager.sync { (totalCount, loadedCount, error) in
+
+}
 ```
+
 <img src='https://lh3.googleusercontent.com/DzdkSx-GQ0TRRTKqKCNkaPJSgh35opZnFybGl7eqpTErkcT6uYgGtp2s6srRHon-KwC4mirsuCuGA9PWVTvOWNujB5W0Z5AImtTlKley86k-07i5cZXZv4m03ND9_UJtk2WLz2Hs' width='300' height='550'/>
 
 ## More Resources
