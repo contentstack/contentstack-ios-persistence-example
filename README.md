@@ -40,7 +40,7 @@ Now that we have created the sample data, it’s time to use and configure the p
 
 ## Step 5: Set up and initialize iOS SDK
 
-To set up and initialize Contentstack’s iOS SDK, refer to our documentation [
+To set up and initialize Contentstack’s iOS SDK, refer to our documentation[
 ](https://www.contentstack.com/docs/platforms/ios#getting-started).
 
 ## Step 6: Clone and configure the application
@@ -67,8 +67,6 @@ class StackConfig {
     }
 }
 ```
-
-This will initiate your project.
 
 ## Step 7: Map data
 
@@ -157,6 +155,7 @@ self.syncManager.sync { (totalCount, loadedCount, error) in
 
 }
 ```
+This will initiate your project.
 
 <img src='https://lh3.googleusercontent.com/DzdkSx-GQ0TRRTKqKCNkaPJSgh35opZnFybGl7eqpTErkcT6uYgGtp2s6srRHon-KwC4mirsuCuGA9PWVTvOWNujB5W0Z5AImtTlKley86k-07i5cZXZv4m03ND9_UJtk2WLz2Hs' width='300' height='550'/>
 
