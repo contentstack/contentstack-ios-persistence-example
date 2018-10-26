@@ -60,10 +60,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		130ACBA577EF9D8922AB7B6C /* Pods-ContentstackPersitenceiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.release.xcconfig"; sourceTree = "<group>"; };
 		24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.debug.xcconfig"; sourceTree = "<group>"; };
 		5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.release.xcconfig"; sourceTree = "<group>"; };
-		6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentstack_ios_persistence_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB46B6D21807CEC008745E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contentstack-ios-persistence-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,8 +137,6 @@
 		14838B5FF5690595873937A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */,
-				130ACBA577EF9D8922AB7B6C /* Pods-ContentstackPersitenceiOS.release.xcconfig */,
 				24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */,
 				5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */,
 			);
@@ -491,10 +487,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Contentstack/Contentstack.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Contentstack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
