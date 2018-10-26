@@ -11,8 +11,8 @@
 #import <Contentstack/Contentstack.h>
 #import "SyncProtocol.h"
 #import "SyncPersistable.h"
-#import "CoreDataStore.h"
-#import "RealmStore.h"
+#import "CoreDataPersistenceHelper.h"
+#import "RealmPersistenceHelper.h"
 
 @interface SyncManageSwiftSupport  : NSObject
 + (BOOL)isSwiftClassName:(NSString *_Nonnull)className;

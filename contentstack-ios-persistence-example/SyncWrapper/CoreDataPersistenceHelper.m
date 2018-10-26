@@ -6,12 +6,12 @@
 //  Copyright © 2018 Contentstack. All rights reserved.
 //
 
-#import "CoreDataStore.h"
+#import "CoreDataPersistenceHelper.h"
 
-@interface CoreDataStore ()
+@interface CoreDataPersistenceHelper ()
 @property (nonatomic, copy) NSManagedObjectContext *context;
 @end
-@implementation CoreDataStore
+@implementation CoreDataPersistenceHelper
 -(instancetype)initWithContenxt:(NSManagedObjectContext *)context {
     self = [super init];
     if (self) {

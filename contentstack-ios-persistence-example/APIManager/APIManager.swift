@@ -23,7 +23,7 @@ class StackConfig {
 
 enum APIManger {
     
-    static var realmStore = RealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
+    static var realmStore = RealmPersistenceHelper(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
     
     static var stack : Stack = Contentstack.stack(withAPIKey: StackConfig.APIKey, accessToken: StackConfig.AccessToken, environmentName: StackConfig.EnvironmentName, config:StackConfig._config)
     

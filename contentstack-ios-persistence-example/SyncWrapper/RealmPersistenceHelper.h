@@ -1,5 +1,5 @@
 //
-//  SyncCoreData.h
+//  SyncRealm.h
 //  ContentstackCoreDataDemo
 //
 //  Created by Uttam Ukkoji on 30/07/18.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "SyncPersistable.h"
-#import <CoreData/CoreData.h>
-
-@interface CoreDataStore : NSObject <PersistanceDelegate>
-
--(instancetype) initWithContenxt:(NSManagedObjectContext*) context;
-
+#import <Realm/Realm.h>
+@interface RealmPersistenceHelper : NSObject <PersistanceDelegate>
+-(instancetype)initWithRealm:(RLMRealm*)realm;
 @end
+
