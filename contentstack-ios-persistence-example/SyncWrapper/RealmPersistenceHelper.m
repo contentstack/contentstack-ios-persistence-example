@@ -6,14 +6,14 @@
 //  Copyright © 2018 Contentstack. All rights reserved.
 //
 
-#import "RealmStore.h"
+#import "RealmPersistenceHelper.h"
 #import <Realm/Realm.h>
 #import "SyncManager.h"
-@interface RealmStore ()
+@interface RealmPersistenceHelper ()
 @property (nonnull, copy)RLMRealm *realm;
 @end
 
-@implementation RealmStore
+@implementation RealmPersistenceHelper
 
 -(instancetype)initWithRealm:(RLMRealm *)realm {
     self = [super init];

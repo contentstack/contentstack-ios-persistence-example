@@ -68,7 +68,24 @@ class StackConfig {
 }
 ```
 
-## Step 7: Map data
+## Step 7: Install Contentstack iOS SDK and SyncManager
+
+Now that your Realm framework is ready, let's look at the steps involved in setting up your Contentstack SDK.
+
+1.  Download and set up the Contentstack iOS SDK. Read the [Contentstack iOS SDK Documentation](https://www.contentstack.com/docs/platforms/ios) for more details.
+2.  Download the current folder of Persistence Library from GitHub and unzip it. You will find the SyncWrapper folder, which contains the following six files:
+        -   SyncManager.h
+        -   SyncManager.m
+        -   RealmPersistenceHelper.h
+        -   RealmPersistenceHelper.m
+        -   SyncPersistable.h
+        -   SyncProtocol.h
+3.  Add the SyncWrapper folder to your project.
+4.  Add the Bridge.h header file. Import the SyncManager.h file using the command given below:
+```
+#import "SyncManager.h"
+```
+## Step 8: Map data
 
 There are three important items to be mapped in our Synchronization process:
 
@@ -141,15 +158,15 @@ class Assets: RLMObject, AssetProtocol{
 
 Now, the final step is to initiate SyncManager and begin with the sync process.
 
-## Step 8: Initiate SyncManager and Sync
+## Step 9: Initiate SyncManager and Sync
 
 After setting up the content mapping, initiate SyncManager by providing the required details:
 ```
 static var stack : Stack = Contentstack.stack(withAPIKey: StackConfig.APIKey, accessToken: StackConfig.AccessToken, environmentName: StackConfig.EnvironmentName, config:StackConfig._config)
 
-var realmStore = RealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
+var realmPersistenceHelper = RealmPersistenceHelper(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
 
-var syncManager : SyncManager = SyncManager(stack: stack, persistance: realmStore)
+var syncManager : SyncManager = SyncManager(stack: stack, persistance: realmPersistenceHelper)
 
 self.syncManager.sync { (totalCount, loadedCount, error) in
 

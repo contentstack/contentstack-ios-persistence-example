@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		54CD54AD1E8A13E2E39C736E /* Pods_contentstack_ios_persistence_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */; };
 		FAB46B6E21807CEC008745E4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAB46B6D21807CEC008745E4 /* README.md */; };
-		FAE2B5E621805DB000D5E7E8 /* Contentstack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */; };
 		FAFADB0F2175ACA70000A175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB0E2175ACA70000A175 /* AppDelegate.swift */; };
 		FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB152175ACA80000A175 /* Assets.xcassets */; };
 		FAFADB192175ACA80000A175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB172175ACA80000A175 /* LaunchScreen.storyboard */; };
 		FAFADB2A2175ADE80000A175 /* SyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB232175ADE80000A175 /* SyncManager.m */; };
-		FAFADB2B2175ADE80000A175 /* RealmStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB242175ADE80000A175 /* RealmStore.m */; };
-		FAFADB2C2175ADE80000A175 /* CoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB272175ADE80000A175 /* CoreDataStore.m */; };
+		FAFADB2B2175ADE80000A175 /* RealmPersistenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */; };
+		FAFADB2C2175ADE80000A175 /* CoreDataPersistenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */; };
 		FAFADB332175B51C0000A175 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB312175B51C0000A175 /* Session.swift */; };
 		FAFADB352175B5440000A175 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB342175B5440000A175 /* Assets.swift */; };
 		FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB382175B56B0000A175 /* SyncStore.swift */; };
@@ -67,21 +66,20 @@
 		6F74B3A794B2C47E5381AD7B /* Pods-ContentstackPersitenceiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPersitenceiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPersitenceiOS/Pods-ContentstackPersitenceiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentstack_ios_persistence_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB46B6D21807CEC008745E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Contentstack.framework; sourceTree = "<group>"; };
 		FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contentstack-ios-persistence-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADB0E2175ACA70000A175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADB152175ACA80000A175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFADB182175ACA80000A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFADB1A2175ACA80000A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFADB212175ADE70000A175 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
-		FAFADB222175ADE80000A175 /* RealmStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmStore.h; sourceTree = "<group>"; };
+		FAFADB222175ADE80000A175 /* RealmPersistenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPersistenceHelper.h; sourceTree = "<group>"; };
 		FAFADB232175ADE80000A175 /* SyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncManager.m; sourceTree = "<group>"; };
-		FAFADB242175ADE80000A175 /* RealmStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmStore.m; sourceTree = "<group>"; };
+		FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPersistenceHelper.m; sourceTree = "<group>"; };
 		FAFADB252175ADE80000A175 /* SyncPersistable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncPersistable.h; sourceTree = "<group>"; };
 		FAFADB262175ADE80000A175 /* SyncProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncProtocol.h; sourceTree = "<group>"; };
-		FAFADB272175ADE80000A175 /* CoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStore.m; sourceTree = "<group>"; };
+		FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistenceHelper.m; sourceTree = "<group>"; };
 		FAFADB282175ADE80000A175 /* SyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncManager.h; sourceTree = "<group>"; };
-		FAFADB292175ADE80000A175 /* CoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStore.h; sourceTree = "<group>"; };
+		FAFADB292175ADE80000A175 /* CoreDataPersistenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistenceHelper.h; sourceTree = "<group>"; };
 		FAFADB312175B51C0000A175 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FAFADB342175B5440000A175 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FAFADB382175B56B0000A175 /* SyncStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncStore.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE2B5E621805DB000D5E7E8 /* Contentstack.framework in Frameworks */,
 				54CD54AD1E8A13E2E39C736E /* Pods_contentstack_ios_persistence_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +150,6 @@
 		C6B72EC7667624880FA8DC62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAE2B5E521805DAF00D5E7E8 /* Contentstack.framework */,
 				E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */,
 			);
 			name = Frameworks;
@@ -201,10 +197,10 @@
 		FAFADB202175AD9B0000A175 /* SyncWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				FAFADB292175ADE80000A175 /* CoreDataStore.h */,
-				FAFADB272175ADE80000A175 /* CoreDataStore.m */,
-				FAFADB222175ADE80000A175 /* RealmStore.h */,
-				FAFADB242175ADE80000A175 /* RealmStore.m */,
+				FAFADB292175ADE80000A175 /* CoreDataPersistenceHelper.h */,
+				FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */,
+				FAFADB222175ADE80000A175 /* RealmPersistenceHelper.h */,
+				FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */,
 				FAFADB282175ADE80000A175 /* SyncManager.h */,
 				FAFADB232175ADE80000A175 /* SyncManager.m */,
 				FAFADB252175ADE80000A175 /* SyncPersistable.h */,
@@ -515,13 +511,13 @@
 			files = (
 				FAFADBBA2175B64A0000A175 /* Result.swift in Sources */,
 				FAFADB332175B51C0000A175 /* Session.swift in Sources */,
-				FAFADB2C2175ADE80000A175 /* CoreDataStore.m in Sources */,
+				FAFADB2C2175ADE80000A175 /* CoreDataPersistenceHelper.m in Sources */,
 				FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */,
 				FAFADBC52175BA3C0000A175 /* SessionCell.swift in Sources */,
 				FAFADB352175B5440000A175 /* Assets.swift in Sources */,
 				FAFADB802175B6090000A175 /* SplashScreenViewController.swift in Sources */,
 				FAFADB7D2175B6090000A175 /* SplashScreenRouter.swift in Sources */,
-				FAFADB2B2175ADE80000A175 /* RealmStore.m in Sources */,
+				FAFADB2B2175ADE80000A175 /* RealmPersistenceHelper.m in Sources */,
 				FAFADBBB2175B64A0000A175 /* UIColor+Additions.swift in Sources */,
 				FAFADB7E2175B6090000A175 /* SplashScreenModels.swift in Sources */,
 				FAFADBB62175B64A0000A175 /* UIFont+Additions.swift in Sources */,
