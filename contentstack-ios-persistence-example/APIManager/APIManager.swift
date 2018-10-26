@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Contentstack
 class StackConfig {
     static var APIKey           = "API_KEY"
     static var AccessToken    = "ACCESS_TOKEN"

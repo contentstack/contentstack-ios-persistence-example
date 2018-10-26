@@ -7,5 +7,5 @@ target 'contentstack-ios-persistence-example' do
 
   # Pods for contentstack-ios-persistence-example
  	pod 'Realm'
-    #pod 'Contentstack'
+    pod 'Contentstack'
 end
