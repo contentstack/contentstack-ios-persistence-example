@@ -8,7 +8,7 @@
 //
 
 import UIKit
-
+import Realm
 enum SessionList
 {
   // MARK: Use cases

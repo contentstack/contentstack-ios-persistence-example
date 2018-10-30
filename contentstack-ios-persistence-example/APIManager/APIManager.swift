@@ -8,6 +8,8 @@
 
 import UIKit
 import Contentstack
+import ContentstackPersistenceRealm
+
 class StackConfig {
     static var APIKey           = "API_KEY"
     static var AccessToken    = "ACCESS_TOKEN"
@@ -23,15 +25,15 @@ class StackConfig {
 
 enum APIManger {
     
-    static var realmStore = RealmPersistenceHelper(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
+    static var realmStore = RealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
     
     static var stack : Stack = Contentstack.stack(withAPIKey: StackConfig.APIKey, accessToken: StackConfig.AccessToken, environmentName: StackConfig.EnvironmentName, config:StackConfig._config)
     
     static var syncManager : SyncManager = SyncManager(stack: APIManger.stack, persistance: APIManger.realmStore!)
 
     static func sync () {
-        self.syncManager.sync { (totalCount, loadedCount, error) in
+        self.syncManager.sync({ (percentage, isSynccompleted, error) in
             
-        }
+        })
     }
 }
