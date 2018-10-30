@@ -127,7 +127,7 @@ class SyncStore: RLMObject, SyncStoreProtocol {
 @objc dynamic var paginationToken: String!
 }
 ```
-### Entry
+### Entry Mapping
 To begin with, let’s consider an example of a Conference app. Let’s say you have a content type called 'Session', and you want to implement it.
 
 Create a new file (File > New > File) named Session, extending RLMObject,  and add following code to implement EntityProtocol, as shown below:
@@ -166,7 +166,7 @@ You also need to implement the fieldMapping function, which returns the mapping 
 
 Similarly, we can add other entries and perform mapping for each entry.
 
-### Asset
+### Assets Mapping
 To save assets, create a new file (File > New > File) named Assets, extending RLMObject, and add the following code to implement AssetProtocol.
 
 ```
