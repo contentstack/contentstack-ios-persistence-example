@@ -189,7 +189,7 @@ After content mapping is done, initiate SyncManager by providing the required de
 ```
 static var stack : Stack = Contentstack.stack(withAPIKey: StackConfig.APIKey, accessToken: StackConfig.AccessToken, environmentName: StackConfig.EnvironmentName, config:StackConfig._config)
 
-var realmStore = ealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
+var realmStore = RealmStore(realm: try? RLMRealm(configuration: RLMRealmConfiguration.default()))
 
 var syncManager : SyncManager = SyncManager(stack: stack, persistance: realmStore)
 
