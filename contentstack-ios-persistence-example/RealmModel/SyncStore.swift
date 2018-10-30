@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Realm
+import ContentstackPersistenceRealm
 class SyncStore: RLMObject, SyncStoreProtocol {
     @objc dynamic var syncToken: String!
     @objc dynamic var paginationToken: String!

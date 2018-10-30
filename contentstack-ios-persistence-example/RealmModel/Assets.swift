@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Realm
+import ContentstackPersistenceRealm
 class Assets: RLMObject, AssetProtocol, Codable {
     
     @objc dynamic var publishLocale: String!

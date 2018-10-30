@@ -6,6 +6,5 @@ target 'contentstack-ios-persistence-example' do
   use_frameworks!
 
   # Pods for contentstack-ios-persistence-example
- 	pod 'Realm'
-    pod 'Contentstack'
+  pod 'ContentstackPersistenceRealm'
 end

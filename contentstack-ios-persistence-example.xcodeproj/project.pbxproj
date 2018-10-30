@@ -12,9 +12,6 @@
 		FAFADB0F2175ACA70000A175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB0E2175ACA70000A175 /* AppDelegate.swift */; };
 		FAFADB162175ACA80000A175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB152175ACA80000A175 /* Assets.xcassets */; };
 		FAFADB192175ACA80000A175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADB172175ACA80000A175 /* LaunchScreen.storyboard */; };
-		FAFADB2A2175ADE80000A175 /* SyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB232175ADE80000A175 /* SyncManager.m */; };
-		FAFADB2B2175ADE80000A175 /* RealmPersistenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */; };
-		FAFADB2C2175ADE80000A175 /* CoreDataPersistenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */; };
 		FAFADB332175B51C0000A175 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB312175B51C0000A175 /* Session.swift */; };
 		FAFADB352175B5440000A175 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB342175B5440000A175 /* Assets.swift */; };
 		FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADB382175B56B0000A175 /* SyncStore.swift */; };
@@ -63,21 +60,13 @@
 		24E5E7BC626304410AB9B8E8 /* Pods-contentstack-ios-persistence-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.debug.xcconfig"; sourceTree = "<group>"; };
 		5779958C8C8C9CB6B4D555E2 /* Pods-contentstack-ios-persistence-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentstack-ios-persistence-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example.release.xcconfig"; sourceTree = "<group>"; };
 		E87EB97A5BA883150505F835 /* Pods_contentstack_ios_persistence_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentstack_ios_persistence_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA55884E2188315B0021D690 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		FAB46B6D21807CEC008745E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FAFADB0B2175ACA70000A175 /* contentstack-ios-persistence-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contentstack-ios-persistence-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADB0E2175ACA70000A175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADB152175ACA80000A175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFADB182175ACA80000A175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFADB1A2175ACA80000A175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFADB212175ADE70000A175 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
-		FAFADB222175ADE80000A175 /* RealmPersistenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPersistenceHelper.h; sourceTree = "<group>"; };
-		FAFADB232175ADE80000A175 /* SyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncManager.m; sourceTree = "<group>"; };
-		FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPersistenceHelper.m; sourceTree = "<group>"; };
-		FAFADB252175ADE80000A175 /* SyncPersistable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncPersistable.h; sourceTree = "<group>"; };
-		FAFADB262175ADE80000A175 /* SyncProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncProtocol.h; sourceTree = "<group>"; };
-		FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistenceHelper.m; sourceTree = "<group>"; };
-		FAFADB282175ADE80000A175 /* SyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncManager.h; sourceTree = "<group>"; };
-		FAFADB292175ADE80000A175 /* CoreDataPersistenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistenceHelper.h; sourceTree = "<group>"; };
 		FAFADB312175B51C0000A175 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FAFADB342175B5440000A175 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FAFADB382175B56B0000A175 /* SyncStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncStore.swift; sourceTree = "<group>"; };
@@ -173,6 +162,7 @@
 		FAFADB0D2175ACA70000A175 /* contentstack-ios-persistence-example */ = {
 			isa = PBXGroup;
 			children = (
+				FA55884E2188315B0021D690 /* Bridge.h */,
 				FAFADBC92175BC4A0000A175 /* Fonts */,
 				FAFADBC62175BAC60000A175 /* Operations */,
 				FAFADBC12175B8A90000A175 /* Utils */,
@@ -180,7 +170,6 @@
 				FAFADBAD2175B63A0000A175 /* Extension */,
 				FAFADB3C2175B5EC0000A175 /* Sence */,
 				FAFADB2F2175B50F0000A175 /* RealmModel */,
-				FAFADB202175AD9B0000A175 /* SyncWrapper */,
 				FAFADBAA2175B61E0000A175 /* APIManager */,
 				FAFADB0E2175ACA70000A175 /* AppDelegate.swift */,
 				FAFADB152175ACA80000A175 /* Assets.xcassets */,
@@ -188,22 +177,6 @@
 				FAFADB1A2175ACA80000A175 /* Info.plist */,
 			);
 			path = "contentstack-ios-persistence-example";
-			sourceTree = "<group>";
-		};
-		FAFADB202175AD9B0000A175 /* SyncWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				FAFADB292175ADE80000A175 /* CoreDataPersistenceHelper.h */,
-				FAFADB272175ADE80000A175 /* CoreDataPersistenceHelper.m */,
-				FAFADB222175ADE80000A175 /* RealmPersistenceHelper.h */,
-				FAFADB242175ADE80000A175 /* RealmPersistenceHelper.m */,
-				FAFADB282175ADE80000A175 /* SyncManager.h */,
-				FAFADB232175ADE80000A175 /* SyncManager.m */,
-				FAFADB252175ADE80000A175 /* SyncPersistable.h */,
-				FAFADB262175ADE80000A175 /* SyncProtocol.h */,
-				FAFADB212175ADE70000A175 /* BridgeHeader.h */,
-			);
-			path = SyncWrapper;
 			sourceTree = "<group>";
 		};
 		FAFADB2F2175B50F0000A175 /* RealmModel */ = {
@@ -486,18 +459,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Contentstack/Contentstack.framework",
+				"${BUILT_PRODUCTS_DIR}/ContentstackPersistenceRealm/ContentstackPersistenceRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Contentstack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentstackPersistenceRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -509,13 +484,11 @@
 			files = (
 				FAFADBBA2175B64A0000A175 /* Result.swift in Sources */,
 				FAFADB332175B51C0000A175 /* Session.swift in Sources */,
-				FAFADB2C2175ADE80000A175 /* CoreDataPersistenceHelper.m in Sources */,
 				FAFADB392175B56B0000A175 /* SyncStore.swift in Sources */,
 				FAFADBC52175BA3C0000A175 /* SessionCell.swift in Sources */,
 				FAFADB352175B5440000A175 /* Assets.swift in Sources */,
 				FAFADB802175B6090000A175 /* SplashScreenViewController.swift in Sources */,
 				FAFADB7D2175B6090000A175 /* SplashScreenRouter.swift in Sources */,
-				FAFADB2B2175ADE80000A175 /* RealmPersistenceHelper.m in Sources */,
 				FAFADBBB2175B64A0000A175 /* UIColor+Additions.swift in Sources */,
 				FAFADB7E2175B6090000A175 /* SplashScreenModels.swift in Sources */,
 				FAFADBB62175B64A0000A175 /* UIFont+Additions.swift in Sources */,
@@ -531,7 +504,6 @@
 				FAFADBBD2175B64A0000A175 /* UIView+Additions.swift in Sources */,
 				FAFADBA62175B6090000A175 /* SessionListPresenter.swift in Sources */,
 				FAFADBAC2175B61E0000A175 /* APIManager.swift in Sources */,
-				FAFADB2A2175ADE80000A175 /* SyncManager.m in Sources */,
 				FAFADBA72175B6090000A175 /* SessionListModels.swift in Sources */,
 				FAFADBC82175BAC70000A175 /* ImageDownloadOperation.swift in Sources */,
 				FAFADBA92175B6090000A175 /* SessionListWorker.swift in Sources */,
@@ -677,7 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.contentstack.ContentstackPersitenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/SyncWrapper/BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/Bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -699,7 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.contentstack.ContentstackPersitenceiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/SyncWrapper/BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "contentstack-ios-persistence-example/Bridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

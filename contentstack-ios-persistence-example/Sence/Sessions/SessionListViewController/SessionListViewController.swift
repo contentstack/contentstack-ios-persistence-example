@@ -8,7 +8,7 @@
 //
 
 import UIKit
-
+import Realm
 protocol SessionListDisplayLogic: class
 {
     func loadSessionList(response: SessionList.Response)

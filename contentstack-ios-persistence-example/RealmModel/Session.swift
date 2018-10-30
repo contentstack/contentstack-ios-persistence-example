@@ -8,7 +8,7 @@
 
 import UIKit
 import Realm
-
+import ContentstackPersistenceRealm
 class Session: RLMObject, EntryProtocol {
     @objc dynamic var sessionId = 0
     
