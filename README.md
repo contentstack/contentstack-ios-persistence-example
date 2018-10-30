@@ -114,8 +114,8 @@ If you have downloaded Contentstack Persistence Library, then the next step is t
 There are three important items to be mapped in the synchronization process:
 
 -   Sync token/pagination token
--   Entries
--   Assets
+-   Entry Mapping
+-   Assets Mapping
 
 Let’s look at how each of the above can be mapped.
 
