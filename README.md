@@ -65,9 +65,9 @@ class StackConfig {
 }
 ```
 
-## Step 6: Install ContentstackPersistenceRealm iOS SDK
+## Step 6: Install ContentstackPersistenceRealm iOS Library
 
-You can configure the SDK in two ways – installation using CocoaPods and manual installation.
+You can configure the Persistence Library in two ways – installation using CocoaPods and manual installation.
 
 ### Method 1: Using Cocoapods
 
@@ -123,8 +123,8 @@ Let’s look at how each of the above can be mapped.
 To save the Sync Token and Pagination Token, you need to create a new file (File > New > File) named SyncStore extending RLMObject,  and add the following code to implement SyncStoreProtocol:
 ```
 class SyncStore: RLMObject, SyncStoreProtocol {
-@objc dynamic var syncToken: String!
-@objc dynamic var paginationToken: String!
+    @objc dynamic var syncToken: String!
+    @objc dynamic var paginationToken: String!
 }
 ```
 ### Entry Mapping
@@ -171,13 +171,13 @@ To save assets, create a new file (File > New > File) named Assets, extending RL
 
 ```
 class Assets: RLMObject, AssetProtocol{
-@objc dynamic var publishLocale: String!
-@objc dynamic var title: String!
-@objc dynamic var uid: String!
-@objc dynamic var createdAt: Date!
-@objc dynamic var updatedAt: Date!
-@objc dynamic var fileName: String!
-@objc dynamic var url: String!
+    @objc dynamic var publishLocale: String!
+    @objc dynamic var title: String!
+    @objc dynamic var uid: String!
+    @objc dynamic var createdAt: Date!
+    @objc dynamic var updatedAt: Date!
+    @objc dynamic var fileName: String!
+    @objc dynamic var url: String!
 }
 ```
 
