@@ -459,7 +459,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Contentstack/Contentstack.framework",
 				"${BUILT_PRODUCTS_DIR}/ContentstackPersistenceRealm/ContentstackPersistenceRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -472,7 +472,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
