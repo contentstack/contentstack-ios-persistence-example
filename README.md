@@ -9,8 +9,8 @@ Perform the steps given below to get started with this app.
 
 ## Prerequisites
 
--   [Xcode 7.0 and later](https://developer.apple.com/xcode/)
--   Mac OS X 10.10.4 and later
+-   [Xcode 10.1 and later](https://developer.apple.com/xcode/)
+-   Mac OS X 10.14.1 and later
 -   [Contentstack account](https://www.app.contentstack.com/)
 -   [Basic knowledge of Contentstack](https://www.contentstack.com/docs/)
 

@@ -58,7 +58,7 @@ extension Data {
                         }
                     }
                 }
-                imageArray.append(UIImage(cgImage: image, scale: UIScreen.main.scale, orientation: UIImageOrientation.up))
+                imageArray.append(UIImage(cgImage: image, scale: UIScreen.main.scale, orientation: UIImage.Orientation.up))
             }
             animatedImage = UIImage.animatedImage(with: imageArray as [UIImage], duration: duration)
         }
@@ -105,7 +105,7 @@ extension Data {
                 UIColor.red.set()
                 UIRectFill(CGRect(x: 0.0, y: 0.0, width: rect.size.width,height: rect.size.height)); //fill the bitmap context
                 
-                let imageData = UIImagePNGRepresentation(img!)//UIImageJPEGRepresentation(img, compressionQuality);
+                let imageData = img!.pngData()//UIImageJPEGRepresentation(img, compressionQuality);
                 UIGraphicsEndImageContext()
                 return imageData!
                 

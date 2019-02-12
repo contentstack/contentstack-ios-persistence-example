@@ -48,14 +48,14 @@ class ImageCache {
     var images = [String: UIImage]()
     
     init() {
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidReceiveMemoryWarning,
+        _ = NotificationCenter.default.addObserver(forName: UIApplication.didReceiveMemoryWarningNotification,
                                                    object: nil, queue: OperationQueue.main) { _ in
                                                     self.images.removeAll(keepingCapacity: false)
         }
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidReceiveMemoryWarning, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didReceiveMemoryWarningNotification, object: nil)
     }
     
     class var sharedCache: ImageCache {

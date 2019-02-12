@@ -79,7 +79,7 @@ class SessionListViewController: UIViewController, SessionListDisplayLogic
         fetchSession()
         self.tableView.tableFooterView = UIView()
         self.tableView.estimatedRowHeight = 999
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.registerNib(SessionCell.self)
         self.title = "SESSIONS"
     }

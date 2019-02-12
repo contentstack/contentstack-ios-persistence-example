@@ -46,8 +46,8 @@ extension UIViewController: StoryBoardID {
     }
     
     func alertUser (errorMessage: String, completion: (()->Swift.Void)? = nil) {
-        let alertView = UIAlertController(title: "", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
-        let alertAction = UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.default) { (_) in
+        let alertView = UIAlertController(title: "", message: errorMessage, preferredStyle: UIAlertController.Style.alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.default) { (_) in
             if let cmp = completion {
                 cmp()
             }
