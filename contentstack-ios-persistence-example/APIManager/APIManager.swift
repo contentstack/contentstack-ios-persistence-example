@@ -12,7 +12,7 @@ import ContentstackPersistenceRealm
 
 class StackConfig {
     static var APIKey           = "API_KEY"
-    static var AccessToken    = "ACCESS_TOKEN"
+    static var AccessToken      = "ACCESS_TOKEN"
     static var EnvironmentName  = "ENVIRONMENT"
     static var _config : Config {
         get {
