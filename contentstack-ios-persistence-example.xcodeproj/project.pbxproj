@@ -459,20 +459,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Contentstack/Contentstack.framework",
+				"${BUILT_PRODUCTS_DIR}/ContentstackPersistence/ContentstackPersistence.framework",
 				"${BUILT_PRODUCTS_DIR}/ContentstackPersistenceRealm/ContentstackPersistenceRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Contentstack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentstackPersistence.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentstackPersistenceRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-contentstack-ios-persistence-example/Pods-contentstack-ios-persistence-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

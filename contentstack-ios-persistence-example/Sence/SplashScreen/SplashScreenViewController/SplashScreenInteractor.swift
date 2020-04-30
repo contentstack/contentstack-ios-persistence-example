@@ -30,13 +30,15 @@ class SplashScreenInteractor: SplashScreenBusinessLogic, SplashScreenDataStore
     func performSync(request: SplashScreen.Sync.Request, completion: @escaping ((SplashScreen.Sync.Response) -> (Void))) {
         worker = SplashScreenWorker()
         worker?.performSync(request, completion: {[weak self] (percentage, isCompleted, error) -> (Void) in
-            let response = SplashScreen.Sync.Response(percentage: percentage, isCompleted: isCompleted, error: error)
-            completion(response)
-            guard let slf = self else {return}
-            if let err = error {
-                slf.presenter?.handleError(err)
-            }else if response.isCompleted {
-                slf.presenter?.presentMainController()
+            DispatchQueue.main.async {
+                let response = SplashScreen.Sync.Response(percentage: percentage, isCompleted: isCompleted, error: error)
+                completion(response)
+                guard let slf = self else {return}
+                if let err = error {
+                    slf.presenter?.handleError(err)
+                }else if response.isCompleted {
+                    slf.presenter?.presentMainController()
+                }
             }
         })
     }
