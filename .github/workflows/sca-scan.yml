@@ -6,10 +6,6 @@ jobs:
   security-sca:
     runs-on: ubuntu-latest
     steps:
-      - name: Install CocoaPods
-        run: sudo gem install cocoapods
-      - name: Install CocoaPods dependencies
-        run: pod install
       - uses: actions/checkout@master
       - uses: snyk/actions/setup@master
       - name: Run Snyk to check for vulnerabilities
