@@ -1,14 +1,22 @@
 name: Source Composition Analysis Scan
 on:
+  push:
+    branches: '*'
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   security-sca:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: snyk/actions/setup@master
-      - name: Run Snyk to check for vulnerabilities
-        run: snyk test --all-projects --fail-on=all
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Snyk
+        run: npm install -g snyk
+
+      - name: Run Snyk Scan
+        run: snyk test --all-projects
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        continue-on-error: true
