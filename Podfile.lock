@@ -1,0 +1,31 @@
+PODS:
+  - Contentstack (3.15.0)
+  - ContentstackPersistence (0.0.4):
+    - Contentstack (~> 3.6)
+  - ContentstackPersistenceRealm (0.0.5):
+    - Contentstack (~> 3.6)
+    - ContentstackPersistence (~> 0.0.4)
+    - Realm (~> 4.0)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+
+DEPENDENCIES:
+  - ContentstackPersistenceRealm
+
+SPEC REPOS:
+  trunk:
+    - Contentstack
+    - ContentstackPersistence
+    - ContentstackPersistenceRealm
+    - Realm
+
+SPEC CHECKSUMS:
+  Contentstack: 2f82e64408036f33d9b561e65cd5c359943362fa
+  ContentstackPersistence: e92df1494edbb421a281255d32412e8cb11cf9ab
+  ContentstackPersistenceRealm: 8c454fef1d5cddb6f2f0b78868054fb3451fcd51
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+
+PODFILE CHECKSUM: 3d72d2efe2e3fa564af881e9385c133c35036ede
+
+COCOAPODS: 1.16.2
