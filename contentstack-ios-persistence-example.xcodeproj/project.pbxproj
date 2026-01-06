@@ -40,6 +40,7 @@
 		FAFADBBD2175B64A0000A175 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBB52175B64A0000A175 /* UIView+Additions.swift */; };
 		FAFADBC02175B6C50000A175 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBBF2175B6C50000A175 /* UIImageView+Additions.swift */; };
 		FAFADBC32175B8B00000A175 /* ImageLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */; };
+		FAFADBC42175B8B10000A176 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC32175B8B10000A176 /* KeychainHelper.swift */; };
 		FAFADBC52175BA3C0000A175 /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC42175BA3C0000A175 /* SessionCell.swift */; };
 		FAFADBC82175BAC70000A175 /* ImageDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADBC72175BAC60000A175 /* ImageDownloadOperation.swift */; };
 		FAFADBD72175BC4B0000A175 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAFADBCB2175BC4A0000A175 /* SF-Pro-Display-Thin.otf */; };
@@ -95,6 +96,7 @@
 		FAFADBB52175B64A0000A175 /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		FAFADBBF2175B6C50000A175 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadManager.swift; sourceTree = "<group>"; };
+		FAFADBC32175B8B10000A176 /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		FAFADBC42175BA3C0000A175 /* SessionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		FAFADBC72175BAC60000A175 /* ImageDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadOperation.swift; sourceTree = "<group>"; };
 		FAFADBCB2175BC4A0000A175 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFADBC22175B8B00000A175 /* ImageLoadManager.swift */,
+				FAFADBC32175B8B10000A176 /* KeychainHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				FAFADBA92175B6090000A175 /* SessionListWorker.swift in Sources */,
 				FAFADBB92175B64A0000A175 /* UIViewController+Extension.swift in Sources */,
 				FAFADBC32175B8B00000A175 /* ImageLoadManager.swift in Sources */,
+				FAFADBC42175B8B10000A176 /* KeychainHelper.swift in Sources */,
 				FAFADBA52175B6090000A175 /* SessionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,10 +579,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+			MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -626,10 +630,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+			MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;

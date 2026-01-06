@@ -1,5 +1,5 @@
 PODS:
-  - Contentstack (3.15.0)
+  - Contentstack (3.16.0)
   - ContentstackPersistence (0.0.4):
     - Contentstack (~> 3.6)
   - ContentstackPersistenceRealm (0.0.5):
@@ -21,11 +21,11 @@ SPEC REPOS:
     - Realm
 
 SPEC CHECKSUMS:
-  Contentstack: 2f82e64408036f33d9b561e65cd5c359943362fa
+  Contentstack: 0c0b524d69c50a4df3197b1cd696ffa44d01acd2
   ContentstackPersistence: e92df1494edbb421a281255d32412e8cb11cf9ab
   ContentstackPersistenceRealm: 8c454fef1d5cddb6f2f0b78868054fb3451fcd51
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
 
-PODFILE CHECKSUM: 3d72d2efe2e3fa564af881e9385c133c35036ede
+PODFILE CHECKSUM: d468bb6989f187386763fa035047a65f3032d2ac
 
 COCOAPODS: 1.16.2
